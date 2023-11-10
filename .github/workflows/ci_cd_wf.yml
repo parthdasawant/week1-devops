@@ -27,7 +27,7 @@ jobs:
 
       - name: Run tests
         run: |
-          python -m pytest -v tests --cov-report "xml:coverage.xml" --cov=tests --junitxml=pytest.xml -v tests | tee pytest-coverage.txt
+          python -m pytest -v tests --cov-report "xml:coverage.xml" --cov=tests --junitxml=pytest.xml -v tests | tee ./pytest-coverage.txt
 
       - name: Pytest coverage comment
         uses: MishaKav/pytest-coverage-comment@main
@@ -62,7 +62,7 @@ jobs:
         uses: MishaKav/pytest-coverage-comment@main
         with:
           hide-comment: true
-          pytest-coverage-path: ./data/pytest-coverage.txt
+          pytest-coverage-path: ./pytest-coverage.txt
 
       - name: Update Readme with Coverage Html
         if: ${{ github.ref == 'refs/heads/main' }}
