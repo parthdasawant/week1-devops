@@ -36,7 +36,7 @@ jobs:
           junitxml-path: ./pytest.xml
           pytest-xml-coverage-path: ./coverage.xml
           title: My Coverage Report Title
-          badge-title: My Badge Coverage Title
+          badge-title: Test Coverage
           hide-badge: false
           hide-report: false
           create-new-comment: false
@@ -44,5 +44,5 @@ jobs:
           report-only-changed-files: false
           remove-link-from-badge: false
           unique-id-for-comment: python3.8
-          junitxml-title: My Xml Summary Title
+          junitxml-title: Test Coverage Report
             
