@@ -27,14 +27,14 @@ jobs:
 
       - name: Run tests
         run: |
-          python -m pytest -v tests --cov-report "xml:coverage.xml" --cov=tests --junitxml=pytest.xml -v tests | tee ./pytest-coverage.txt
+          python -m pytest -v tests --cov-report "xml:coverage.xml" --cov=tests --junitxml=pytest.xml -v tests | tee $GITHUB_WORKSPACE/pytest-coverage.txt
 
       - name: Pytest coverage comment
         uses: MishaKav/pytest-coverage-comment@main
         with:
-          pytest-coverage-path: ./pytest-coverage.txt
-          junitxml-path: ./pytest.xml
-          pytest-xml-coverage-path: ./coverage.xml
+          pytest-coverage-path: $GITHUB_WORKSPACE/pytest-coverage.txt
+          junitxml-path: $GITHUB_WORKSPACE/pytest.xml
+          pytest-xml-coverage-path: $GITHUB_WORKSPACE/coverage.xml
           title: My Coverage Report Title
           badge-title: Test Coverage
           hide-badge: false
@@ -62,16 +62,17 @@ jobs:
         uses: MishaKav/pytest-coverage-comment@main
         with:
           hide-comment: true
-          pytest-coverage-path: ./pytest-coverage.txt
+          pytest-coverage-path: $GITHUB_WORKSPACE/pytest-coverage.txt
 
       - name: Update Readme with Coverage Html
         if: ${{ github.ref == 'refs/heads/main' }}
         run: |
+          cd $GITHUB_WORKSPACE  # Change to the repository root directory
           sed -i '/<!-- Pytest Coverage Comment:Begin -->/,/<!-- Pytest Coverage Comment:End -->/c\<!-- Pytest Coverage Comment:Begin -->\n\${{ steps.coverageComment.outputs.coverageHtml }}\n<!-- Pytest Coverage Comment:End -->' ./README.md
 
       - name: Commit & Push changes to Readme
         if: ${{ github.ref == 'refs/heads/main' }}
-        uses: actions-js/push@master
+        uses: actions/push@main
         with:
           message: Update coverage on Readme
           github_token: ${{ secrets.GITHUB_TOKEN }}
