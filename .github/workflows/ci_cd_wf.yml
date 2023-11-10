@@ -72,7 +72,7 @@ jobs:
 
       - name: Commit & Push changes to Readme
         if: ${{ github.ref == 'refs/heads/main' }}
-        uses: actions/push@main
+        uses: actions-js/push@master
         with:
           message: Update coverage on Readme
           github_token: ${{ secrets.GITHUB_TOKEN }}
