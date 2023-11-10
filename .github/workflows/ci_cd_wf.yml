@@ -35,7 +35,7 @@ jobs:
       - name: Pytest coverage comment
         uses: MishaKav/pytest-coverage-comment@main
         with:
-          pytest-coverage-path: ./pytest-coverage.txt
+          pytest-coverage-path: pytest-coverage.txt
           junitxml-path: ./pytest.xml
           pytest-xml-coverage-path: ./coverage.xml
           title: My Coverage Report Title
@@ -55,7 +55,7 @@ jobs:
         uses: MishaKav/pytest-coverage-comment@main
         with:
           hide-comment: false
-          pytest-coverage-path: ./pytest-coverage.txt
+          pytest-coverage-path: pytest-coverage.txt
 
       - name: Update Readme with Coverage Html
         if: ${{ github.ref == 'refs/heads/main' }}
