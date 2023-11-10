@@ -1,3 +1,5 @@
+![Tests](https://github.com/parthdasawant/week1-devops/actions/workflows/ci_cd_wf.yml/badge.svg)
+
 # Week 1 Project: Building a Calculator
 
 <!-- Pytest Coverage Comment:Begin -->
