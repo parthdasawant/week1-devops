@@ -1,7 +1,7 @@
 # Week 1 Project: Building a Calculator
 
 <!-- Pytest Coverage Comment:Begin -->
-<!-- Pytest Coverage Comment:End -->
+\n<!-- Pytest Coverage Comment:End -->
 
 ## Project Overview
 
