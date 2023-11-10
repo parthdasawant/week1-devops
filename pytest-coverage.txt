@@ -1,0 +1,81 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.0, pytest-7.3.1, pluggy-1.0.0 -- /opt/hostedtoolcache/Python/3.12.0/x64/bin/python
+cachedir: .pytest_cache
+rootdir: /home/runner/work/week1-devops/week1-devops
+plugins: cov-4.1.0
+collecting ... collected 4 items
+
+tests/test_calculator.py::test_add PASSED                                [ 25%]
+tests/test_calculator.py::test_sub PASSED                                [ 50%]
+tests/test_calculator.py::test_mul PASSED                                [ 75%]
+tests/test_calculator.py::test_div PASSED                                [100%]
+
+=============================== warnings summary ===============================
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:683
+  /opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:683: DeprecationWarning: ast.Str is deprecated and will be removed in Python 3.14; use ast.Constant instead
+    and isinstance(item.value, ast.Str)
+
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:685
+  /opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:685: DeprecationWarning: Attribute s is deprecated and will be removed in Python 3.14; use value instead
+    doc = item.value.s
+
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:965
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:965
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:965
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:965
+  /opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:965: DeprecationWarning: ast.Str is deprecated and will be removed in Python 3.14; use ast.Constant instead
+    inlocs = ast.Compare(ast.Str(name.id), [ast.In()], [locs])
+
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:968
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:968
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:968
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:968
+  /opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:968: DeprecationWarning: ast.Str is deprecated and will be removed in Python 3.14; use ast.Constant instead
+    expr = ast.IfExp(test, self.display(name), ast.Str(name.id))
+
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:1102
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:1102
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:1102
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:1102
+  /opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:1102: DeprecationWarning: ast.Str is deprecated and will be removed in Python 3.14; use ast.Constant instead
+    syms.append(ast.Str(sym))
+
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:1104
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:1104
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:1104
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:1104
+  /opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:1104: DeprecationWarning: ast.Str is deprecated and will be removed in Python 3.14; use ast.Constant instead
+    expls.append(ast.Str(expl))
+
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:817: 24 warnings
+  /opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:817: DeprecationWarning: ast.Str is deprecated and will be removed in Python 3.14; use ast.Constant instead
+    keys = [ast.Str(key) for key in current.keys()]
+
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:927
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:927
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:927
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:927
+  /opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:927: DeprecationWarning: ast.Str is deprecated and will be removed in Python 3.14; use ast.Constant instead
+    assertmsg = ast.Str("")
+
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:929
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:929
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:929
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:929
+  /opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:929: DeprecationWarning: ast.Str is deprecated and will be removed in Python 3.14; use ast.Constant instead
+    template = ast.BinOp(assertmsg, ast.Add(), ast.Str(explanation))
+
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:941
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:941
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:941
+../../../../../opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:941
+  /opt/hostedtoolcache/Python/3.12.0/x64/lib/python3.12/site-packages/_pytest/assertion/rewrite.py:941: DeprecationWarning: ast.NameConstant is deprecated and will be removed in Python 3.14; use ast.Constant instead
+    clear = ast.Assign(variables, ast.NameConstant(None))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+-- generated xml file: /home/runner/work/week1-devops/week1-devops/pytest.xml --
+
+---------- coverage: platform linux, python 3.12.0-final-0 -----------
+Coverage XML written to file coverage.xml
+
+======================== 4 passed, 54 warnings in 0.09s ========================
