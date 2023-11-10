@@ -1,5 +1,8 @@
 # Week 1 Project: Building a Calculator
 
+<!-- Pytest Coverage Comment:Begin -->
+<!-- Pytest Coverage Comment:End -->
+
 ## Project Overview
 
 In this project, you'll create a calculator application and establish good development practices, including testing and CI/CD.
